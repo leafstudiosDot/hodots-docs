@@ -1,6 +1,6 @@
 import './App.css';
 import marked from "marked";
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
 import { ReactComponent as WebLogo } from "./assets/icon.svg"
 import homemd from './docs/home.md'
@@ -18,6 +18,9 @@ function App() {
           </Route>
         </Switch>
       </span>
+      <footer>
+        {Footer()}
+      </footer>
     </div>
   )
 }
@@ -53,4 +56,11 @@ function Header() {
   )
 }
 
+function Footer() {
+  return(
+    <div className="Footer">
+      © 2021 leafstudiosDot
+    </div>
+  )
+}
 export default App;
