@@ -23,3 +23,8 @@ header {
 #WebLogo:active {
   background-color: #646464;
 }
+
+.Page {
+  padding-left: 20px;
+  padding-right: 20px;
+}
