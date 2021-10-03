@@ -1,7 +1,7 @@
 {
   "name": "hodots-docs",
   "description": "hodots. Docs for Developers",
-  "homepage": "https://leafstudiosdot.github.io/hodots-docs/",
+  "homepage": "https://docs.hodots.com/",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
