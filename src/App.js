@@ -2,6 +2,7 @@ import './App.css';
 import marked from "marked";
 import React, { Component } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
+import {ReactComponent as WebLogo} from "./assets/icon.svg"
 
 class App extends Component {
   render() {
@@ -31,7 +32,7 @@ function Home() {
 function Header() {
   return (
     <div className="Header">
-
+      <WebLogo />
     </div>
   )
 }
