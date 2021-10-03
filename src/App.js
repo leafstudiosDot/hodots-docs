@@ -11,11 +11,13 @@ class App extends Component {
         <header>
           {Header()}
         </header>
+        <span style={{top: "60px", position: "absolute"}}>
         <Switch>
           <Route exact path={"/"}>
             {Home()}
           </Route>
         </Switch>
+        </span>
       </div>
     )
   }
@@ -24,7 +26,7 @@ class App extends Component {
 function Home() {
   return(
     <div className="Page">
-
+      
     </div>
   )
 }
