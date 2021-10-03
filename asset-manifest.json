@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hodots-docs/static/css/main.e07981cc.chunk.css",
-    "main.js": "/hodots-docs/static/js/main.58a205f2.chunk.js",
-    "main.js.map": "/hodots-docs/static/js/main.58a205f2.chunk.js.map",
-    "runtime-main.js": "/hodots-docs/static/js/runtime-main.08cdc502.js",
-    "runtime-main.js.map": "/hodots-docs/static/js/runtime-main.08cdc502.js.map",
-    "static/js/2.034f05c3.chunk.js": "/hodots-docs/static/js/2.034f05c3.chunk.js",
-    "static/js/2.034f05c3.chunk.js.map": "/hodots-docs/static/js/2.034f05c3.chunk.js.map",
-    "static/js/3.7a5f84da.chunk.js": "/hodots-docs/static/js/3.7a5f84da.chunk.js",
-    "static/js/3.7a5f84da.chunk.js.map": "/hodots-docs/static/js/3.7a5f84da.chunk.js.map",
-    "index.html": "/hodots-docs/index.html",
-    "static/css/main.e07981cc.chunk.css.map": "/hodots-docs/static/css/main.e07981cc.chunk.css.map",
-    "static/js/2.034f05c3.chunk.js.LICENSE.txt": "/hodots-docs/static/js/2.034f05c3.chunk.js.LICENSE.txt",
-    "static/media/home.7ef68a91.md": "/hodots-docs/static/media/home.7ef68a91.md",
-    "static/media/icon.5b7ce58e.svg": "/hodots-docs/static/media/icon.5b7ce58e.svg"
+    "main.css": "/static/css/main.e07981cc.chunk.css",
+    "main.js": "/static/js/main.58a205f2.chunk.js",
+    "main.js.map": "/static/js/main.58a205f2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.59f33a0f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.59f33a0f.js.map",
+    "static/js/2.034f05c3.chunk.js": "/static/js/2.034f05c3.chunk.js",
+    "static/js/2.034f05c3.chunk.js.map": "/static/js/2.034f05c3.chunk.js.map",
+    "static/js/3.7a5f84da.chunk.js": "/static/js/3.7a5f84da.chunk.js",
+    "static/js/3.7a5f84da.chunk.js.map": "/static/js/3.7a5f84da.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.e07981cc.chunk.css.map": "/static/css/main.e07981cc.chunk.css.map",
+    "static/js/2.034f05c3.chunk.js.LICENSE.txt": "/static/js/2.034f05c3.chunk.js.LICENSE.txt",
+    "static/media/home.7ef68a91.md": "/static/media/home.7ef68a91.md",
+    "static/media/icon.5b7ce58e.svg": "/static/media/icon.5b7ce58e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.08cdc502.js",
+    "static/js/runtime-main.59f33a0f.js",
     "static/js/2.034f05c3.chunk.js",
     "static/css/main.e07981cc.chunk.css",
     "static/js/main.58a205f2.chunk.js"
