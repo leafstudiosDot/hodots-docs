@@ -32,7 +32,7 @@ function Home() {
 function Header() {
   return (
     <div className="Header">
-      <WebLogo />
+      <WebLogo id="WebLogo" />
     </div>
   )
 }
