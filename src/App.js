@@ -41,9 +41,7 @@ function Home() {
 
   return (
     <div className="Page">
-      <section>
         <article dangerouslySetInnerHTML={{ __html: markdown }}></article>
-      </section>
     </div>
   )
 }
