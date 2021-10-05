@@ -41,7 +41,7 @@ function Home() {
 
   return (
     <div className="Page">
-        <article dangerouslySetInnerHTML={{ __html: markdown }}></article>
+      <article dangerouslySetInnerHTML={{ __html: markdown }}></article>
     </div>
   )
 }
@@ -50,12 +50,33 @@ function Header() {
   return (
     <div className="Header">
       <WebLogo id="WebLogo" />
+      <div className="HeaderMenu">
+        <div className="HeaderMenuButtons"
+          style={{
+            borderBottom: "solid 2px #ffffff"
+          }}>
+          Home
+        </div>
+        <div className="HeaderMenuButtons">
+          Docs
+        </div>
+        <a href="https://blog.hodots.com/#/changelog" target="_blank noreferrer">
+          <div className="HeaderMenuButtons">
+            Changelog
+          </div>
+        </a>
+        <a href="https://github.com/leafstudiosDot/hodots-docs" target="_blank noreferrer">
+          <div className="HeaderMenuButtons">
+            GitHub
+          </div>
+        </a>
+      </div>
     </div>
   )
 }
 
 function Footer() {
-  return(
+  return (
     <div className="Footer">
       © 2021 leafstudiosDot
     </div>
