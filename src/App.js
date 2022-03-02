@@ -1,7 +1,7 @@
 import './App.css';
 import marked from "marked";
 import React, { useEffect, useState } from 'react';
-import { Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { ReactComponent as WebLogo } from "./assets/icon.svg"
 import homemd from './docs/home.md'
 
@@ -12,11 +12,13 @@ function App() {
         {Header()}
       </header>
       <span style={{ top: "60px", position: "absolute" }}>
-        <Switch>
-          <Route exact path={"/"}>
-            {Home()}
-          </Route>
-        </Switch>
+        <Router>
+          <Switch>
+            <Route exact path={"/"}>
+              {Home()}
+            </Route>
+          </Switch>
+        </Router>
       </span>
       <footer>
         {Footer()}
