@@ -13,10 +13,15 @@ export default function SideBar() {
     }, [])
     return (
         <span>
-            <div className="sidebarOpener" onClick={() => setsideBarOpen(true)} style={{display: sideBarOpen ? 'none' : 'block'}}>&gt;</div>
+            <div className="sidebarOpener" onClick={() => setsideBarOpen(true)} style={{ display: sideBarOpen ? 'none' : 'block' }}>&gt;</div>
             <div className="sidebar" style={{ height: windowHeight - 82, display: sideBarOpen ? 'block' : 'none' }}>
                 <div id="sidebar-close" onClick={() => setsideBarOpen(false)}>X</div>
-                <ul id="sidebar-menu">Search</ul>
+                <ul id="sidebar-menu-cont">
+                    <li id="sidebar-menu">Search</li>
+                </ul>
+                <ul id="sidebar-menu-cont">
+                    <li id="sidebar-menu">Terms</li>
+                </ul>
             </div>
         </span>
     )
