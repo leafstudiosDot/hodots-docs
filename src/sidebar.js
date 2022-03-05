@@ -17,10 +17,11 @@ export default function SideBar() {
             <div className="sidebar" style={{ height: windowHeight - 82, display: sideBarOpen ? 'block' : 'none' }}>
                 <div id="sidebar-close" onClick={() => setsideBarOpen(false)}>X</div>
                 <ul id="sidebar-menu-cont">
-                    <li id="sidebar-menu">Search</li>
+                    <li id="sidebar-menu" onClick={() => {setsideBarOpen(false);}}>Search</li>
+                    <Link to={"/docs"}><li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>Home</li></Link>
                 </ul>
                 <ul id="sidebar-menu-cont">
-                    <li id="sidebar-menu">Terms</li>
+                    <Link to={"/docs/terms"}><li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>Terms</li></Link>
                 </ul>
             </div>
         </span>
