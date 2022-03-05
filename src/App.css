@@ -66,3 +66,7 @@ a:active {
 .HeaderMenuButtons:hover {
   background-color: #7e7e7e; 
 }
+
+h1 {
+  font-size: 30px;
+}
