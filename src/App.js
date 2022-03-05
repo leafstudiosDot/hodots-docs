@@ -9,11 +9,11 @@ import docs from './docs.js';
 function App() {
   return (
     <div className="App">
-      <header>
-        {Header()}
-      </header>
-      <span style={{ top: "60px", position: "absolute" }}>
         <Router>
+          <header>
+            {Header()}
+          </header>
+          <span style={{ top: "60px", position: "absolute" }}>
           <Switch>
             <Route exact path={"/"}>
               {Home()}
@@ -22,8 +22,8 @@ function App() {
               {Docs()}
             </Route>
           </Switch>
+          </span>
         </Router>
-      </span>
       <footer>
         {Footer()}
       </footer>
