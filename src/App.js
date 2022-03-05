@@ -1,9 +1,10 @@
 import './App.css';
 import marked from "marked";
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { ReactComponent as WebLogo } from "./assets/icon.svg"
 import homemd from './docs/home.md'
+import docs from './docs.js';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Switch>
             <Route exact path={"/"}>
               {Home()}
+            </Route>
+            <Route path={"/docs"}>
+              {Docs()}
             </Route>
           </Switch>
         </Router>
@@ -48,20 +52,23 @@ function Home() {
   )
 }
 
+function Docs() {
+  return (
+    docs()
+  )
+}
+
 function Header() {
   return (
     <div className="Header">
       <WebLogo id="WebLogo" />
       <div className="HeaderMenu">
-        <div className="HeaderMenuButtons"
-          style={{
-            borderBottom: "solid 2px #ffffff"
-          }}>
+        <Link to={"/"}><div className="HeaderMenuButtons">
           Home
-        </div>
-        <div className="HeaderMenuButtons">
+        </div></Link>
+        <Link to={"/docs"}><div className="HeaderMenuButtons">
           Docs
-        </div>
+        </div></Link>
         <a href="https://blog.hodots.com/#/changelog" target="_blank noreferrer">
           <div className="HeaderMenuButtons">
             Changelog
