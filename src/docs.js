@@ -1,6 +1,7 @@
 import marked from "marked";
 import React, { useEffect, useState } from 'react';
 import { Route, Switch } from "react-router-dom";
+import SideBar from './sidebar.js';
 import mainmd from './docs/docs.md'
 import termsmd from './docs/terms.md'
 
@@ -40,6 +41,7 @@ export default function DocsMain() {
     });
     return (
         <div>
+            {SideBar()}
             <Switch>
                 <Route exact path={"/docs"}>
                     <div className="Page">

@@ -70,3 +70,58 @@ a:active {
 h1 {
   font-size: 30px;
 }
+
+.sidebarOpener {
+  position: fixed;
+  margin-top: -25px;
+  font-size: 15px;
+  border-radius: 10px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 5px;
+  height: 20px;
+  width: 35px;
+  text-align: center;
+  background-color: #707070;
+  color: #FFFFFF;
+  font-weight: bolder;
+  user-select: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  width: 260px;
+  background-color: #9e9e9e;
+  margin-top: -25px;
+}
+
+#sidebar-menu {
+  position: absolute;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 120px;
+  padding-left: 10px;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: #b7b7b7;
+  border-style: solid;
+  border-radius: 6px;
+  border-color: #747474;
+}
+
+#sidebar-menu:hover {
+  background-color: #787878;
+}
+
+#sidebar-close {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  padding: 10px;
+  color: #940000;
+  user-select: none;
+  height: 20px;
+  cursor: pointer;
+}
