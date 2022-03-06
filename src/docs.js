@@ -4,12 +4,34 @@ import { Route, Switch } from "react-router-dom";
 import SideBar from './sidebar.js';
 import mainmd from './docs/docs.md'
 import termsmd from './docs/terms.md'
+import hodotsAPImd from './docs/hodotsAPI.md'
 
 function ToS() {
     const [markdown, setMarked] = useState("");
 
     useEffect(() => {
         fetch(termsmd)
+            .then(response => {
+                return response.text()
+            })
+            .then(text => {
+                //console.log(text)
+                setMarked(marked(text))
+            })
+    });
+
+    return (
+        <div className="Page">
+            <article dangerouslySetInnerHTML={{ __html: markdown }}></article>
+        </div>
+    )
+}
+
+function HodotsAPI() {
+    const [markdown, setMarked] = useState("");
+
+    useEffect(() => {
+        fetch(hodotsAPImd)
             .then(response => {
                 return response.text()
             })
@@ -50,6 +72,9 @@ export default function DocsMain() {
                 </Route>
                 <Route exact path={"/docs/terms"}>
                     {ToS()}
+                </Route>
+                <Route exact path={"/docs/API"}>
+                    {HodotsAPI()}
                 </Route>
             </Switch>
         </div>

@@ -19,9 +19,15 @@ export default function SideBar() {
                 <ul id="sidebar-menu-cont">
                     <li id="sidebar-menu" onClick={() => {setsideBarOpen(false);}}>Search</li>
                     <Link to={"/docs"}><li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>Home</li></Link>
+                    <Link to={"/docs/API"}><li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>hodots. API</li></Link>
                 </ul>
                 <ul id="sidebar-menu-cont">
+                    <div id="sidebar-menu-title">Legal</div>
                     <Link to={"/docs/terms"}><li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>Terms</li></Link>
+                </ul>
+                <ul id="sidebar-menu-cont">
+                    <div id="sidebar-menu-title">Reference</div>
+                    <li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>Post</li>
                 </ul>
             </div>
         </span>

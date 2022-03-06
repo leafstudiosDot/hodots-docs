@@ -9,6 +9,7 @@ header {
   width: 100%;
   height: 60px;
   background-color: #707070;
+  z-index: 10;
 }
 
 #WebLogo {
@@ -132,4 +133,54 @@ h1 {
   user-select: none;
   height: 20px;
   cursor: pointer;
+}
+
+#sidebar-menu-title {
+  margin-left: 10px;
+  user-select: none;
+}
+
+blockquote {
+  background-color: #bcbcbc;
+  margin-left: 2px;
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 10px;
+  overflow-x: scroll;
+  width: 70%;
+}
+
+code {
+  background-color: #bcbcbc;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+pre {
+  width: 70%;
+}
+
+pre code {
+  display: block;
+  overflow-x: scroll;
+  padding: 8px;
+}
+
+table {
+  border-style: solid;
+  background-color: #c7c7c7;
+  border-radius: 5px;
+}
+th {
+  padding: 10px;
+  padding-right: 15px;
+  border-bottom: solid #000000;
+  border-right: solid #000000;
+  background-color: #a8a8a8;
+}
+td {
+  padding: 5px;
+  border-right: solid #000000;
+  border-bottom: solid #000000;
 }
