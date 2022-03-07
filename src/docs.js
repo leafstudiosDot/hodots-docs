@@ -5,33 +5,13 @@ import SideBar from './sidebar.js';
 import mainmd from './docs/docs.md'
 import termsmd from './docs/terms.md'
 import hodotsAPImd from './docs/hodotsAPI.md'
+import postReferMD from './docs/posts/index.md'
 
-function ToS() {
+function ImportMD(markdownimp) {
     const [markdown, setMarked] = useState("");
 
     useEffect(() => {
-        fetch(termsmd)
-            .then(response => {
-                return response.text()
-            })
-            .then(text => {
-                //console.log(text)
-                setMarked(marked(text))
-            })
-    });
-
-    return (
-        <div className="Page">
-            <article dangerouslySetInnerHTML={{ __html: markdown }}></article>
-        </div>
-    )
-}
-
-function HodotsAPI() {
-    const [markdown, setMarked] = useState("");
-
-    useEffect(() => {
-        fetch(hodotsAPImd)
+        fetch(markdownimp)
             .then(response => {
                 return response.text()
             })
@@ -71,10 +51,13 @@ export default function DocsMain() {
                     </div>
                 </Route>
                 <Route exact path={"/docs/terms"}>
-                    {ToS()}
+                    {ImportMD(termsmd)}
                 </Route>
                 <Route exact path={"/docs/API"}>
-                    {HodotsAPI()}
+                    {ImportMD(hodotsAPImd)}
+                </Route>
+                <Route exact path={"/docs/reference/post"}>
+                    {ImportMD(postReferMD)}
                 </Route>
             </Switch>
         </div>

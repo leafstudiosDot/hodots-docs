@@ -27,7 +27,7 @@ export default function SideBar() {
                 </ul>
                 <ul id="sidebar-menu-cont">
                     <div id="sidebar-menu-title">Reference</div>
-                    <li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>Post</li>
+                    <Link to={"/docs/reference/post"}><li id="sidebar-menu" onClick={() => setsideBarOpen(false)}>Post</li></Link>
                 </ul>
             </div>
         </span>
