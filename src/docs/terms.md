@@ -11,6 +11,6 @@ By accessing or using hodots. Services, you are agreeing that your application c
 ## Get Access
 In order to access an API, you are required to [create an application here](https://hodots.com/developer) (Note: you must be logged in to access that link). As you create an application, you must agree to hodots. Developers Terms of Service.
 # Termination
-Having your passport terminated for accessing hodots. API with or without notice. leafstudiosDot reserves the right to terminate your access to hodots. Services or discontinue the service or any feature you have access if you violate the Terms.
+Having your passport terminated for accessing hodots. API with or without notice. leafstudiosDot reserves the right to terminate your access to hodots. Services or discontinue the service or any feature you have access if you violate the Terms. It also means silence you furry fool, you're finished here, you understand? i've had with your whining - you're cast out! you're banished!
 
 If we believe your application was used for discrimination against users, your application and the developer of the application will block the feature of creating an application, this also leads to passport block with or without notice
