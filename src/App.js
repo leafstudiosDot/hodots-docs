@@ -87,7 +87,7 @@ function Header() {
 function Footer() {
   return (
     <div className="Footer">
-      © 2022 leafstudiosDot
+      © 2023 leafstudiosDot
     </div>
   )
 }
