@@ -56,7 +56,7 @@ export default function DocsMain() {
                 <Route exact path={"/docs/API"}>
                     {ImportMD(hodotsAPImd)}
                 </Route>
-                <Route exact path={"/docs/reference/post"}>
+                <Route exact path={"/docs/guide/post"}>
                     {ImportMD(postReferMD)}
                 </Route>
             </Switch>
